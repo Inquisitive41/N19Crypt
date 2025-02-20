@@ -1,27 +1,27 @@
 # N19Crypt
-Документ представляет собой историю нашего взаимодействия, где мы разработали криптографический алгоритм "N19-Crypt" и блокчейн "N19-Chain", вдохновлённые числом 19 из Корана.
+The document is a history of our interaction, where we developed the cryptographic algorithm "N19-Crypt" and the blockchain "N19-Chain", inspired by the number 19 from the Quran.
 
-# N19-Chain: Блокчейн на Python, вдохновлённый числом 19 из Корана
+#N19-Chain: A Python Blockchain inspired by the number 19 from the Quran
 
-## Описание
-"N19-Chain" — это экспериментальный блокчейн-прототип, использующий "N19-Crypt" — уникальный алгоритм шифрования с числом 19 как основой перестановки. Проект вдохновлён числовыми закономерностями Корана (например, 114 сур = 19 × 6, 2698 "Аллах" = 19 × 142). 
+## Description
+"N19-Chain" is an experimental blockchain prototype using "N19-Crypt", a unique encryption algorithm with the number 19 as the basis for permutation. The project is inspired by the numerical patterns of the Quran (for example, 114 surahs = 19 × 6, 2698 "Allah" = 19 × 142). 
 
-## Особенности
-- **Шифрование**: Трёхслойное ("N19-Crypt": перестановка по 19 байт, замена, AES-CTR).
-- **Консенсус**: "Proof-of-19" (хэш % 19 = 0).
-- **P2P-сеть**: Тест на 3 нодах (5000, 5001, 5002).
+## Features
+- **Encryption**: Three-layer ("N19-Crypt": permutation of 19 bytes, replacement, AES-CTR).
+- **Consensus**: "Proof-of-19" (hash %19 = 0).
+- **P2P network**: Test on 3 nodes (5000, 5001, 5002).
 
-## Результаты теста
-- Скорость: 331 блок за 0.42 сек (≈ 786 tx/s).
-- Размер блока: 95 байт.
-- Энтропия: 4.34 бит/байт (до 8 с случайными данными).
-- Вывод:
+## Test Results
+- Speed: 331 blocks in 0.42 seconds (≈ 786 tx/s).
+- Block size: 95 bytes.
+- Entropy: 4.34 bits/byte (up to 8 with random data).
+- Withdrawal:
 
 
-**Поддержите проект!**  
-Нам очень важна ваша поддержка для дальнейшего развития "N19-Crypt" и "N19-Chain". Если вам понравился проект и вы хотите помочь с оптимизацией, тестами или масштабированием, 
-вы можете отправить донат на криптокошелёк (BITCOIN через Телеграм): 1C6seysHUXb278WytiLE715b9mVFoWYf78    (Toncoin): UQBWDGL8nLnNFq4bDnxpRTX9g7XjYGXTXiSvnanih4VLwe7K   Boosty:  https://boosty.to/inquisitive41/donate 
-Все средства пойдут на улучшение кода, серверы для тестов и подготовку к ICO. Спасибо за ваш вклад!
+**Support the project!**  
+Your support is very important to us for the further development of N19-Crypt and N19-Chain. If you liked the project and want to help with optimization, testing or scaling, 
+you can send a donation to a crypto wallet (BITCOIN via Telegram): 1C6seysHUXb278WytiLE715b9mVFoWYf78 (Toncoin): UQBWDGL8nLnNFq4bDnxpRTX9g7XjYGXTXiSvnanih4VLwe7K Boosty: https://boosty.to/inquisitive41/donate 
+All funds will be used to improve the code, test servers and prepare for the ICO. Thank you for your contribution!
 
 
 
@@ -32,16 +32,16 @@ Python 3.11.x
 python -m pip install --upgrade pip
 pip install pycryptodome numpy scipy asyncio
 pip install oqs
-Убедитесь, что pycryptodome, numpy, scipy, asyncio присутствуют.
-Структура проекта
-Создайте папку для проекта, например N19-Project, и добавьте следующие файлы (их код приведён в конце):
+Make sure that pycryptodome, numpy, scipy, asyncio are present.
+Project structure
+Create a folder for the project, for example N19-Project, and add the following files (their code is given at the end):
 
-n19crypt.py — Модуль шифрования "N19-Crypt".
-block.py — Класс блока для блокчейна.
-blockchain.py — Логика цепочки "N19-Chain".
-node.py — P2P-нода.
-main.py — Основной скрипт для запуска.
-Пример структуры:
+n19crypt.py — The N19-Crypt encryption module.
+block.py is the block class for the blockchain.
+blockchain.py is the logic of the "N19-Chain" chain.
+node.py — A P2P node.
+main.py — The main script to run.
+Example of the structure:
 N19-Project/
 ├── n19crypt.py
 ├── block.py
@@ -52,72 +52,71 @@ N19-Project/
 
 
 
-"N19-Crypt и N19-Chain — это исследовательский прототип, не предназначенный для коммерческого использования без дополнительной проверки."
+"N19-Crypt and N19-Chain are research prototypes that are not intended for commercial use without additional verification."
 
-"Проект находится в процессе патентования; пожалуйста, уважайте авторские права."
+"The project is in the process of patenting; please respect the copyright."
 
-"ICO рассматривается как потенциальная идея для будущего, но сейчас проект находится на стадии прототипа."
+"ICO is being considered as a potential idea for the future, but the project is currently at the prototype stage."
 
- "Число 19 использовано как математическая основа, вдохновлённая структурой текста, без религиозных претензий."
+ "The number 19 is used as a mathematical basis inspired by the structure of the text, without religious pretensions."
 
-"Этот код предоставляется 'как есть' для исследовательских целей. Автор не несёт ответственности за его использование."
-
-
-
-"N19-Crypt и N19-Chain — это исследовательский прототип, вдохновлённый числом 19 как математической закономерностью. Проект не предназначен для коммерческого использования или нарушения законодательства. Использование кода — на ответственности пользователя."
+"This code is provided 'as is' for research purposes. The author is not responsible for its use."
 
 
 
-"Это рабочий прототип, находящийся в разработке. ICO и монетизация — лишь идеи для обсуждения, не активные предложения."
-
-"Если хотите поддержать развитие, свяжитесь со мной лично для деталей."
+"N19-Crypt and N19-Chain are research prototypes inspired by the number 19 as a mathematical pattern. The project is not intended for commercial use or violation of the law. The use of the code is the responsibility of the user."
 
 
 
-Итог для форумов
+"This is a working prototype under development. ICO and monetization are just ideas for discussion, not active proposals."
 
-Что у нас есть:
-
-
+"If you want to support the development, please contact me personally for details."
 
 
 
-"N19-Crypt" — уникальный алгоритм шифрования с числом 19, трёхслойный (перестановка, замена, AES-CTR), энтропия до 8 бит/байт.
+Summary for the forums
 
-
-
-"N19-Chain" — блокчейн с консенсусом "Proof-of-19", P2P-сеть (3 ноды), 331 блок за 0.42 сек.
-
-
-
-Рабочий код на Python, тесты на Коране, устойчивость к атакам доказана.
-
-Что обсуждаем:
+What we have:
 
 
 
 
 
-Как поднять энтропию с 4.34 до 8?
+"N19-Crypt" is a unique encryption algorithm with the number 19, three—layer (permutation, substitution, AES-CTR), entropy up to 8 bits/byte.
 
 
 
-Усложнить консенсус для реальной сети?
+"N19-Chain" is a Proof-of-19 consensus blockchain, a P2P network (3 nodes), 331 blocks in 0.42 seconds.
 
 
 
-Перейти на C++ для скорости?
+Working code in Python, tests on the Koran, resistance to attacks has been proven.
+
+What are we discussing:
 
 
 
-Монетизация: ICO, лицензии, патент? (идеи для будущего, не активные предложения)
+
+
+How to raise the entropy from 4.34 to 8?
 
 
 
-Или Open Source на GitHub?
+Complicate the consensus for the real network?
 
-Важно:
- "N19-Crypt и N19-Chain — это исследовательский прототип, вдохновлённый числом 19 как математической закономерностью. Проект не предназначен для коммерческого использования или нарушения законодательства. Использование кода — на ответственности пользователя. Проект находится в процессе патентования; пожалуйста, уважайте авторские права."
 
-Жду ваших идей и предложений!
 
+Switch to C++ for speed?
+
+
+
+Monetization: ICO, licenses, patent? (ideas for the future, not active suggestions)
+
+
+
+Or Open Source on GitHub?
+
+Important:
+ "N19-Crypt and N19-Chain are research prototypes inspired by the number 19 as a mathematical pattern. The project is not intended for commercial use or violation of the law. The use of the code is the responsibility of the user. The project is in the process of patenting; please respect the copyrights."
+
+I am waiting for your ideas and suggestions!
